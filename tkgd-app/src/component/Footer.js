@@ -12,6 +12,7 @@ import tele from '../assets/Icons/telegram.svg';
 export default function Footer(){
     return (
         <Box className='flex flex-col' style={{width:'100%'}}>
+            {/* đăng bài */}
             <Box className='flex flex-col justify-center items-center space-y-10' 
             style={{
                         height: '418px',
@@ -25,15 +26,12 @@ export default function Footer(){
                     <Typography style={{fontWeight: 400, fontSize: 18, color: 'white'}}>Đây là nơi chia sẻ các kiến thức về game,</Typography>
                     <Typography style={{fontWeight: 400, fontSize: 18, color: 'white'}}>còn là nơi phát triển, nuôi dưỡng niềm đam mê của bạn</Typography>
                 </Box>
-                <Box  className='flex justify-end'>
-                    <Button style={{height:'64px', width:'15vw'}} variant='contained'>
-                        <Typography style={{fontSize: 18, textTransform: 'none'}}>Đăng bài</Typography>
-                        <IconButton>
-                                <img src={rightArrow} alt='rightArrow' />
-                        </IconButton>
-                    </Button>
-                </Box>
+                <Button className="flex flex-row space-x-3 justify-center items-center" style={{height:'64px', width:'15vw'}} variant='contained'>
+                    <Typography style={{fontSize: 18, textTransform: 'none'}}>Đăng bài</Typography>
+                    <img src={rightArrow} alt='rightArrow' />
+                </Button>
             </Box>
+            {/* about us */}
             <Box className='flex flex-col justify-center space-y-5 pt-16 pb-5' bgcolor='primary.main'>
                 <div className='flex justify-center'>
                     <img src={footerLogo} alt='footerLogo' />
