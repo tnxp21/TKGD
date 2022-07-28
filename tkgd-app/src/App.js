@@ -41,7 +41,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <div className="App flex flex-col">
+        <div className="App flex flex-col space-y-14">
           <Header />
           <div className='contents'>
             <Switch>
