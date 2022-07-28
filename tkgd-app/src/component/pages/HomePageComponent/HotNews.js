@@ -49,8 +49,7 @@ function Item(props)
     return (
         <Paper className="grid grid-cols-8 px-20 py-10" 
         style={{
-                backgroundColor: 'rgba(52, 52, 52, 0.8)',
-                backgroundImage: `url(${props.item.image})`, 
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)),url(${props.item.image})`, 
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center',
