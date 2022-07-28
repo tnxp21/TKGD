@@ -2,6 +2,7 @@ import Header from './component/Header'
 import HomePage from './component/pages/HomePage';
 import Footer from './component/Footer';
 import ReviewPage from './component/pages/ReviewPage';
+import BlogList from './component/pages/BlogList';
 import { createTheme, ThemeProvider } from '@mui/material';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
@@ -50,6 +51,9 @@ function App() {
               </Route>
               <Route exact path="/review">
                 <ReviewPage />
+              </Route>
+              <Route exact path="/blogList">
+                <BlogList />
               </Route>
             </Switch>
           </div>
