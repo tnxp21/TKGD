@@ -1,5 +1,6 @@
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 import rightArrow from '../../../assets/Icons/rightArrow.svg';
 import SlideShow1 from '../../../assets/Pictures/SlideShow1.svg';
 import SlideShow2 from '../../../assets/Pictures/SlideShow2.svg';
@@ -59,7 +60,9 @@ function Item(props)
                 <Typography className='text-left text-white' style={{fontSize: 18}}>{props.item.description}</Typography>
                 <Box className='flex flex-grow items-end'>
                     <Button className='flex flex-row space-x-5' style={{width:'180px', height: '55px', backgroundColor: 'white'}} variant="contained">
-                        <Typography style={{fontSize:'18'}}>Đọc thêm</Typography>
+                        <Link to="/review">
+                            <Typography style={{fontSize:'18'}}>Đọc thêm</Typography>
+                        </Link>
                         <img src={rightArrow} alt={rightArrow} />
                     </Button>
                 </Box>
