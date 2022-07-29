@@ -1,4 +1,4 @@
-import { Box, Typography, IconButton, Paper } from "@mui/material";
+import { Box, Typography} from "@mui/material";
 import rightArrow from '../assets/Icons/rightArrow.svg';
 import { Button } from './customComponent/Button';
 import FooterImage from '../assets/Pictures/Footer.svg';
