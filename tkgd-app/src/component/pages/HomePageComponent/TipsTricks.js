@@ -3,6 +3,8 @@ import {Box, Typography, IconButton } from '@mui/material';
 import PanoramaFishEyeIcon from '@mui/icons-material/PanoramaFishEye';
 import {Button} from '../../customComponent/Button'
 import rightArrow from '../../../assets/Icons/rightArrow.svg';
+import { Link } from 'react-router-dom';
+
 
 import Slide1 from './LMHTSlide/Slide1';
 import Slide2 from './LMHTSlide/Slide2';
@@ -47,12 +49,14 @@ export default function TipsTricks(){
                     }
             </Carousel>
             <Box  className='flex justify-end'>
-                <Button style={{height:'64px', width:'15vw'}} variant='contained'>
-                    <Typography style={{fontSize: 18, textTransform: 'none'}}>Các bài blog khác</Typography>
-                    <IconButton>
-                            <img src={rightArrow} alt='rightArrow' />
-                    </IconButton>
-                </Button>
+                <Link to="/blogList">
+                    <Button style={{height:'64px', width:'15vw'}} variant='contained'>
+                        <Typography style={{fontSize: 18, textTransform: 'none'}}>Các bài blog khác</Typography>
+                        <IconButton>
+                                <img src={rightArrow} alt='rightArrow' />
+                        </IconButton>
+                    </Button>
+                </Link>
             </Box>
         </Box>
     );

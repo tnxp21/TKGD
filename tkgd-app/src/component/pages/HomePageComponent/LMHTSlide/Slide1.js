@@ -17,7 +17,7 @@ export default function Slide1(){
                 <Box className='flex flex-row space-x-3'>
                     <img src={avt1} alt='avtLMHT1' />
                     <Box className='flex flex-col text-left'>
-                        <Typography color='primary'>Minh Đăng</Typography>
+                        <Typography color='primary'>Dạ Vũ</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -75,7 +75,7 @@ export default function Slide1(){
                 <Box className='flex flex-row space-x-3'>
                     <img src={avt3} alt='avtLMHT1' />
                     <Box className='flex flex-col text-left'>
-                        <Typography color='primary'>Minh Đăng</Typography>
+                        <Typography color='primary'>Thành Thái</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
