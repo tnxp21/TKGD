@@ -9,25 +9,8 @@ import Slide1 from './LMHTSlide/Slide1';
 import Slide2 from './LMHTSlide/Slide2';
 import Slide3 from './LMHTSlide/Slide3';
 
-function Item(props)
-{
-    return (
-        <>{props.item.slide}</>
-    );
-}
 
 export default function LMHT(){
-    var items = [
-        {
-            slide: <Slide1/>,
-        },
-        {
-            slide: <Slide2/>,
-        },
-        {
-            slide: <Slide3/>,
-        },
-    ]
     return(
         <Box className='flex flex-col px-20 space-y-10'>
             <Typography className="text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >LIÊN MINH HUYỀN THOẠI</Typography>
@@ -43,9 +26,9 @@ export default function LMHT(){
                 }}
                 
                 >
-                    {
-                        items.map( (item, i) => <Item key={i} item={item} /> )
-                    }
+                    <Slide1/>
+                    <Slide2/>
+                    <Slide3/>
             </Carousel>
             <Box  className='flex justify-end'>
                 <Link to="/blogList">

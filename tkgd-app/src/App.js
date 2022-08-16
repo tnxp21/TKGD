@@ -3,9 +3,14 @@ import HomePage from './component/pages/HomePage';
 import Footer from './component/Footer';
 import ReviewPage from './component/pages/ReviewPage';
 import BlogList from './component/pages/BlogList';
+import FeedBack from './component/pages/FeedBack';
+
 import { createTheme, ThemeProvider } from '@mui/material';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ScrollToTop from 'react-router-scroll-top'
+
 import './App.css';
+
 
 const theme = createTheme({
   palette:{
@@ -37,24 +42,31 @@ const theme = createTheme({
 })
 
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <div className="App flex flex-col space-y-14">
+        <div className="App flex flex-col">
           <Header />
           <div className='contents'>
             <Switch>
-              <Route exact path="/">
-                <HomePage />
-              </Route>
-              <Route exact path="/review">
-                <ReviewPage />
-              </Route>
-              <Route exact path="/blogList">
-                <BlogList />
-              </Route>
+              <ScrollToTop>
+                <Route exact path="/">
+                  <HomePage />
+                </Route>
+                <Route exact path="/homePage">
+                  <HomePage />
+                </Route>
+                <Route exact path="/review">
+                  <ReviewPage />
+                </Route>
+                <Route exact path="/blogList">
+                  <BlogList />
+                </Route>
+                <Route exact path="/feedBack">
+                  <FeedBack />
+                </Route>
+              </ScrollToTop>
             </Switch>
           </div>
           <Footer />
