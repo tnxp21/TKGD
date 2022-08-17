@@ -11,7 +11,7 @@ export default function FeedBack()
         <Box className='grid grid-cols-2 gap-5 mx-28 my-5 p-5'>
             <Box className='flex flex-col space-y-8'>
                 <Typography className="text-black text-left" style={{fontSize: 30, fontWeight: 600}}>FEED BACK</Typography>
-                <Typography className="text-gray-500 text-left" style={{fontSize: 20, fontWeight: 400}}>You can always reach us via following contact details. We will give our best to reach you as possible.</Typography>
+                <Typography className="text-gray-500 text-left" style={{fontSize: 20, fontWeight: 400}}>Bạn luôn có thể liên hệ với chúng tôi qua các thông tin liên hệ sau. Chúng tôi sẽ cố gắng hết sức để hỗ trợ bạn tốt nhất.</Typography>
                 <div className='flex flex-row space-x-5'>
                     <img src={phone} alt='phone'/>
                     <Typography className="text-gray-500" style={{fontSize: 20, fontWeight: 400}}>+234 805 029 1265 , +234 907 228 0656</Typography>
@@ -30,8 +30,8 @@ export default function FeedBack()
                     size="small"
                     margin="dense"
                     fullWidth
-                    placeholder="Please enter your name"
-                    label="Your Name"
+                    placeholder="Vui lòng nhập tên"
+                    label="Tên"
                     variant="outlined"
                     type="email"
                 />
@@ -40,8 +40,8 @@ export default function FeedBack()
                     size="small"
                     margin="dense"
                     fullWidth
-                    placeholder="Please enter your email"
-                    label="Your email"
+                    placeholder="Vui lòng nhập email"
+                    label="Email"
                     variant="outlined"
                     type="email"
                 />
@@ -50,17 +50,16 @@ export default function FeedBack()
                     size="small"
                     margin="dense"
                     fullWidth
-                    placeholder="Please enter your feed back"
-                    label="Your feedback"
+                    placeholder="Hãy nhập feedback của bạn"
+                    label="Feed back của bạn"
                     variant="outlined"
                     type="email"
                     multiline
                     rows={5}
                 />
-                <Box className='flex items-center justify-end'>
-                    <Button style={{backgroundColor:'#EDEDED', color:'gray', border:'groove'}}>
-                        <Typography className="text-black" style={{fontSize: 20, fontWeight: 400, textTransform: 'none'}}>Send  feedback</Typography>
-
+                <Box className='flex rounded-md items-center justify-end'>
+                    <Button style={{backgroundColor:'#EDEDED', color:'gray'}}>
+                        <Typography className="text-black" style={{fontSize: 20, fontWeight: 400, textTransform: 'none'}}>Gửi feedback</Typography>
                     </Button>
                 </Box>
                 
