@@ -19,18 +19,11 @@ export default function TipsTricks(){
             <Typography className="pl-20 text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >LIÊN MINH HUYỀN THOẠI</Typography>
             <Box 
                 className='flex flex-col pb-10 px-10 space-y-10 justify-center items-center'
-                style={{backgroundImage:`url(${BG})`}}
+                style={{backgroundImage:`url(${BG})`, backgroundSize: 'cover'}}
             >
                 {page===1 && <Slide1/>}
                 {page===2 && <Slide2/>}
-                {/* <Pagination 
-                    count={9} 
-                    color="primary"
-                    page={page}
-                    size="100px"
-                    onChange={handleChange}
-                /> */}
-                 <Pagination
+                <Pagination
                     count={10}
                     color="primary"
                     onChange={handleChange}

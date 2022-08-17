@@ -7,7 +7,7 @@ import bookMark from '../../../assets/Icons/bookMark.svg'
 
 export default function Slide1(){
     return(
-        <Box className='grid grid-rows-4 gap-y-14 mx-32'>
+        <Box className='grid grid-rows-4 gap-y-14'>
             <Paper 
                 className='flex flex-col space-y-5 px-14 py-5' 
                 elevation={5}
@@ -20,7 +20,9 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >17.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={blogListThumbnail} alt='blogListThumbnail' />
+                <Link to="viewBlog">
+                    <img src={blogListThumbnail} alt='blogListThumbnail' />
+                </Link>
                 <Box className='text-left space-y-5'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Top đội hình DTCL mùa 7, đội hình mạnh DTCL 12.11</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Trong danh sách đội hình mạnh Đấu Trường Chân Lý ở dưới đây, có những đội hình sẽ sử dụng Slowroll và Hyperroll, đây là hai kiểu chiến thuật thường được game ...</Typography>

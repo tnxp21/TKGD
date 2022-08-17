@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Box, Typography, IconButton  } from '@mui/material';
 import avt1 from '../../../../assets/avatar/LMHT4.svg'
 import pic1 from '../../../../assets/Pictures/LMHT/LMHT4.svg'
@@ -22,7 +23,9 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={pic1} alt='picLMHT1' />
+                <Link to="viewBlog">
+                    <img src={pic1} alt='picLMHT1' />
+                </Link>
                 <Box className='text-left'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Trò chơi Mario phiên bản 4.0</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc đầy tìm năng trong vài năm trở lại. </Typography>
@@ -51,7 +54,9 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >07.08.2022  - 25 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={pic2} alt='picLMHT1' />
+                <Link to="viewBlog">
+                    <img src={pic2} alt='picLMHT2' />
+                </Link>
                 <Box className='text-left'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Bài hát cho chung kết thế giới</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Trong xuyên suốt lịch sử phát triển của Đấu Trường Chân Lý thì những chủ lực... </Typography>
@@ -80,7 +85,9 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >08.06.2022  - 7 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={pic3} alt='picLMHT1' />
+                <Link to="viewBlog">
+                    <img src={pic3} alt='picLMHT3' />
+                </Link>
                 <Box className='text-left'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Virus ra mắt công nghệ mới</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc ... </Typography>

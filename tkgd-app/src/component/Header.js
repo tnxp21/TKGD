@@ -55,10 +55,12 @@ function Header(){
     
     return(
         <Box className='flex flex-row justify-between items-center px-10 space-x-10' style={{height: 60}} bgcolor="primary.main">
-            <div className='flex flex-row space-x-3 mr-8'>
-                <img src={logo} alt="Logo" />
-                <Typography className='font-semibold' style={{fontSize: 22, fontWeight:600}}>G-hub</Typography>
-            </div>
+            <Link to="/homePage">
+                <div className='flex flex-row space-x-3 mr-8'>
+                    <img src={logo} alt="Logo" />
+                    <Typography className='font-semibold' style={{fontSize: 22, fontWeight:600}}>G-hub</Typography>
+                </div>
+            </Link>
             <div class="flex flex-grow justify-between items-center">
                 <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -137,12 +139,14 @@ function Header(){
                             </Link>
                         </li>
                         <li>
-                            <Typography className="text-black font-semibold" style={{fontSize: 18}}>Đăng bài</Typography>
+                            <Link to="/posting">
+                                <Typography className="text-black font-semibold" style={{fontSize: 18}}>Đăng bài</Typography>
+                            </Link>
                         </li>
                     </ul>
                 </div>
             </div>
-            <form action="/blogList" class="flex items-center">   
+            <form action="/search" class="flex items-center">   
                 <label class="sr-only">Search</label>
                 <div class="relative w-full">
                     <div class="flex absolute inset-y-0 left-0 items-center pl-3">

@@ -9,14 +9,14 @@ import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
 
 
-export default function Review(){
+export default function TipsTricks(){
     const [page, setPage] = useState(1);
     const handleChange = (event, value) => {
         setPage(value);
     };
     return(
         <Box className='flex flex-col space-y-10 pt-5 px-5' >
-            <Typography className="pl-20 text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >Review</Typography>
+            <Typography className="pl-20 text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >Kết quả tìm kiếm</Typography>
             <Box 
                 className='flex flex-col pb-10 px-10 space-y-10 justify-center items-center'
                 style={{backgroundImage:`url(${BG})`, backgroundSize: 'cover'}}

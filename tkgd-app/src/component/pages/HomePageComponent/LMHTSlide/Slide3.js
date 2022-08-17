@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Box, Typography, IconButton  } from '@mui/material';
 import avt1 from '../../../../assets/avatar/LMHT7.svg'
 import pic1 from '../../../../assets/Pictures/LMHT/LMHT7.svg'
@@ -21,7 +22,9 @@ export default function Slide3(){
                         <Typography style={{textColor:'primary'}} >05.10.2022  - 7 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={pic1} alt='picLMHT1' />
+                <Link to="viewBlog">
+                    <img src={pic1} alt='picLMHT1' />
+                </Link>
                 <Box className='text-left'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Góc chơi game mơ ước</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc đầy tìm năng trong vài năm trở lại.</Typography>
@@ -50,7 +53,9 @@ export default function Slide3(){
                         <Typography style={{textColor:'primary'}} >07.05.2022  - 25 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={pic2} alt='picLMHT1' />
+                <Link to="viewBlog">
+                    <img src={pic2} alt='picLMHT2' />
+                </Link>
                 <Box className='text-left'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Liên quân ra mắt chế độ mới</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Trong xuyên suốt lịch sử phát triển của Đấu Trường Chân Lý thì những chủ lực đội bạn sẽ... </Typography>
@@ -79,7 +84,9 @@ export default function Slide3(){
                         <Typography style={{textColor:'primary'}} >08.08.2022  - 9 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={pic3} alt='picLMHT1' />
+                <Link to="viewBlog">
+                    <img src={pic3} alt='picLMHT3' />
+                </Link>
                 <Box className='text-left'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Tiệm net 24/7 mới mở</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc ... </Typography>
