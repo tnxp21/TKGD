@@ -57,7 +57,7 @@ export default function FeedBack()
                     multiline
                     rows={5}
                 />
-                <Box className='flex rounded-md items-center justify-end'>
+                <Box className='flex borderrounded-md items-center justify-end'>
                     <Button style={{backgroundColor:'#EDEDED', color:'gray'}}>
                         <Typography className="text-black" style={{fontSize: 20, fontWeight: 400, textTransform: 'none'}}>Gửi feedback</Typography>
                     </Button>

@@ -8,6 +8,7 @@ import ViewBlog from './component/pages/ViewBlog';
 import Search from './component/pages/Search';
 import PersonalBlog from './component/pages/PersonalBlog';
 import Posting from './component/pages/Posting'
+import Preview from './component/pages/Preview'
 
 
 
@@ -83,6 +84,9 @@ function App() {
                 </Route>
                 <Route exact path="/posting">
                   <Posting />
+                </Route>
+                <Route exact path="/preview">
+                  <Preview />
                 </Route>
               </ScrollToTop>
             </Switch>

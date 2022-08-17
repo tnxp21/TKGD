@@ -61,29 +61,30 @@ function Header(){
                     <Typography className='font-semibold' style={{fontSize: 22, fontWeight:600}}>G-hub</Typography>
                 </div>
             </Link>
-            <div class="flex flex-grow justify-between items-center">
+            <div class="flex flex-grow justify-between items-center h-full">
                 <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                     <svg class="hidden w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </button>
-                <div class="hidden w-full md:block" id="mobile-menu">
-                    <ul class="flex flex-col mt-4 md:flex-row md:justify-between md:items-center md:mt-0 md:text-sm">
+                <div class="hidden w-full h-full md:block" id="mobile-menu">
+                    <ul class="flex flex-col h-full mt-4 md:flex-row md:justify-between md:items-center md:mt-0 md:text-sm">
                         <li>
                             <Link to="/homePage">
                                 <Typography style={{fontSize: 18, fontWeight:600}} >Trang chủ</Typography>
                             </Link>
                         </li>
-                        <li className='flex items-center'>
-                            <IconButton
+                        <li className='flex items-center h-full'>
+                            <Button
                                 aria-controls={open ? 'basic-menu' : undefined}
                                 aria-haspopup="true"
                                 aria-expanded={open ? 'true' : undefined}
                                 onClick={handleClick}
+                                endIcon={<img src={downArrow} alt="downArrow"/>}
+                                style={{color:'gray', height:'100%'}}
                             >
-                                <Typography className="text-black font-semibold" style={{fontSize: 18, textTransform: 'none'}}>Phân loại</Typography>
-                                <img src={downArrow} alt="downArrow"/>
-                            </IconButton>
+                                <Typography className="text-black font-semibold" style={{fontSize: 18, fontWeight:600, textTransform: 'none'}}>Phân loại</Typography>
+                            </Button>
                             <Menu 
                                 id="basic-menu"
                                 anchorEl={anchorEl}
@@ -125,22 +126,22 @@ function Header(){
                         </li>
                         <li>
                             <Link to="/review">
-                                <Typography className="text-black font-semibold" style={{fontSize: 18}}>Review</Typography>
+                                <Typography className="text-black" style={{fontSize: 18, fontWeight:600}}>Review</Typography>
                             </Link>
                         </li>
                         <li>
                             <Link to="/blogList">
-                                <Typography className="text-black font-semibold" style={{fontSize: 18}}>Tin hot & Sự kiện</Typography>
+                                <Typography className="text-black" style={{fontSize: 18, fontWeight:600}}>Tin hot & Sự kiện</Typography>
                             </Link>
                         </li>
                         <li>
                             <Link to="/feedBack">
-                                <Typography className="text-black font-semibold" style={{fontSize: 18}}>Feedback</Typography>
+                                <Typography className="text-black" style={{fontSize: 18, fontWeight:600}}>Feedback</Typography>
                             </Link>
                         </li>
                         <li>
                             <Link to="/posting">
-                                <Typography className="text-black font-semibold" style={{fontSize: 18}}>Đăng bài</Typography>
+                                <Typography className="text-blackx" style={{fontSize: 18, fontWeight:600}}>Đăng bài</Typography>
                             </Link>
                         </li>
                     </ul>
@@ -230,7 +231,6 @@ function Header(){
                                 </a>
                             </Box>
                         </DialogContent>
-                            
                     </Dialog>
                 </div>
             }

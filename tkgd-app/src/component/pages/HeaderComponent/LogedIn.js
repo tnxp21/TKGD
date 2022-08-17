@@ -27,6 +27,7 @@ export default function LogedIn()
                 aria-haspopup="true"
                 aria-expanded={open2 ? 'true' : undefined}
                 onClick={handleClick2}
+                className='h-full'
             >
                 <img src={avatar} alt="avatar" style={{width:40, height:40}} />
             </IconButton>
