@@ -214,7 +214,7 @@ function Header(){
                             </Box>
                             <Box className='rounded-md border-2 border-gray-500' >
                                 <Button 
-                                    className='flex flex-row space-x-3 rounded-md mt-0 w-full flex items-center' 
+                                    className='flex flex-row space-x-3 rounded-md mt-0 w-full items-center' 
                                     onClick={handleClick2} 
                                 >
                                     <img src={GoogleIcon} alt="GoogleIcon"/>

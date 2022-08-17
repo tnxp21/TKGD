@@ -40,7 +40,7 @@ export default function TipsTricks(){
                     </Box>
                     <Box className='flex flex-row justify-between'>
                         <Typography style={{fontWeight:400, fontSize: 20}} color='black'>Thời gian tham gia</Typography>
-                        <Typography style={{fontWeight:400, fontSize: 20}} color='black'>7/6/2022</Typography>
+                        <Typography style={{fontWeight:400, fontSize: 20}} color='black'>07/06/2022</Typography>
                     </Box>
                     <Box className='flex flex-row justify-between'>
                         <Typography style={{fontWeight:400, fontSize: 20}} color='black'>Số bài blog</Typography>
