@@ -1,11 +1,9 @@
 import { Box, Typography, IconButton, Paper  } from '@mui/material';
 import { Link } from 'react-router-dom';
-import avt from '../../../assets/avatar/BlogList1.svg';
 import blogListThumbnail from '../../../assets/Pictures/BlogList/blogListThumbnail.svg'
 import heartReact from '../../../assets/Icons/heartReact.svg';
-import bookMark from '../../../assets/Icons/bookMark.svg'
 
-export default function Slide1(){
+export default function Slide1(props){
     return(
         <Box className='grid grid-rows-4 gap-y-14'>
             <Paper 
@@ -14,9 +12,9 @@ export default function Slide1(){
                 sx={{borderRadius: '30px'}}
             >
                 <Box className='flex flex-row space-x-3'>
-                    <img src={avt} alt='avt' />
+                    <img src={props.miniavt} alt='avt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -39,12 +37,12 @@ export default function Slide1(){
                             <IconButton>
                                 <img src={heartReact} alt='heartReact' />
                             </IconButton>
-                            <Typography style={{fontWeight:400, fontSize:18}}>9.8K</Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>1.5K</Typography>
                         </Box>
-                        <Typography style={{fontWeight:400, fontSize:18}}>66 phản hồi</Typography>
+                        <Typography style={{fontWeight:400, fontSize:18}}>8 phản hồi</Typography>
                     </Box>
                     <IconButton>
-                        <img src={bookMark} alt='bookMark' />
+                        <img src={props.saved} alt='bookMark' />
                     </IconButton>
                 </Box>
             </Paper>
@@ -54,9 +52,9 @@ export default function Slide1(){
                 sx={{borderRadius: '30px'}}
             >
                 <Box className='flex flex-row space-x-3'>
-                    <img src={avt} alt='avt' />
+                    <img src={props.miniavt} alt='avt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -74,17 +72,17 @@ export default function Slide1(){
                         <Typography className='text-left' style={{fontWeight:600, fontSize:22}}>Đọc thêm...</Typography>
                 </Link>
                 <Box className='flex flex-grow items-end flex-row justify-between '>
-                    <Box className='flex flex-row space-x-14 items-center'>
+                <Box className='flex flex-row space-x-14 items-center'>
                         <Box className='flex flex-row space-x-2 items-center'>
                             <IconButton>
                                 <img src={heartReact} alt='heartReact' />
                             </IconButton>
-                            <Typography style={{fontWeight:400, fontSize:18}}>2.2K</Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>1.5K</Typography>
                         </Box>
-                        <Typography style={{fontWeight:400, fontSize:18}}>70 phản hồi</Typography>
+                        <Typography style={{fontWeight:400, fontSize:18}}>8 phản hồi</Typography>
                     </Box>
                     <IconButton>
-                        <img src={bookMark} alt='bookMark' />
+                        <img src={props.saved} alt='bookMark' />
                     </IconButton>
                 </Box>
             </Paper>
@@ -94,9 +92,9 @@ export default function Slide1(){
                 sx={{borderRadius: '30px'}}
             >
                 <Box className='flex flex-row space-x-3'>
-                    <img src={avt} alt='avt' />
+                    <img src={props.miniavt} alt='props.miniavt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -110,17 +108,17 @@ export default function Slide1(){
                         <Typography className='text-left' style={{fontWeight:600, fontSize:22}}>Đọc thêm...</Typography>
                 </Link>
                 <Box className='flex flex-grow items-end flex-row justify-between '>
-                    <Box className='flex flex-row space-x-14 items-center'>
+                <Box className='flex flex-row space-x-14 items-center'>
                         <Box className='flex flex-row space-x-2 items-center'>
                             <IconButton>
                                 <img src={heartReact} alt='heartReact' />
                             </IconButton>
-                            <Typography style={{fontWeight:400, fontSize:18}}>4K</Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>3K</Typography>
                         </Box>
-                        <Typography style={{fontWeight:400, fontSize:18}}>51 phản hồi</Typography>
+                        <Typography style={{fontWeight:400, fontSize:18}}>81 phản hồi</Typography>
                     </Box>
                     <IconButton>
-                        <img src={bookMark} alt='bookMark' />
+                        <img src={props.saved} alt='bookMark' />
                     </IconButton>
                 </Box>
             </Paper>
@@ -130,9 +128,9 @@ export default function Slide1(){
                 sx={{borderRadius: '30px'}}
             >
                 <Box className='flex flex-row space-x-3'>
-                    <img src={avt} alt='avt' />
+                    <img src={props.miniavt} alt='props.miniavt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -146,17 +144,17 @@ export default function Slide1(){
                         <Typography className='text-left' style={{fontWeight:600, fontSize:22}}>Đọc thêm...</Typography>
                 </Link>
                 <Box className='flex flex-grow items-end flex-row justify-between '>
-                    <Box className='flex flex-row space-x-14 items-center'>
+                <Box className='flex flex-row space-x-14 items-center'>
                         <Box className='flex flex-row space-x-2 items-center'>
                             <IconButton>
                                 <img src={heartReact} alt='heartReact' />
                             </IconButton>
-                            <Typography style={{fontWeight:400, fontSize:18}}>3.3K</Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>1.5K</Typography>
                         </Box>
-                        <Typography style={{fontWeight:400, fontSize:18}}>22 phản hồi</Typography>
+                        <Typography style={{fontWeight:400, fontSize:18}}>8 phản hồi</Typography>
                     </Box>
                     <IconButton>
-                        <img src={bookMark} alt='bookMark' />
+                        <img src={props.saved} alt='bookMark' />
                     </IconButton>
                 </Box>
             </Paper>

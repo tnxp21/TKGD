@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Box, Typography, IconButton, Paper, Button  } from '@mui/material';
 import avt from '../../assets/avatar/BlogList1.svg';
 import avt2 from '../../assets/avatar/LMHT3.svg';
@@ -12,13 +11,7 @@ import BG from '../../assets/Pictures/BlogList/backGround.svg';
 import img2 from '../../assets/Pictures/ViewBlog/Image2.svg';
 import img3 from '../../assets/Pictures/ViewBlog/Image3.svg';
 
-import Carousel from 'react-material-ui-carousel';
-import PanoramaFishEyeIcon from '@mui/icons-material/PanoramaFishEye';
-import rightArrow from '../../assets/Icons/rightArrow.svg';
-
-import Slide1 from './HomePageComponent/LMHTSlide/Slide1';
-import Slide2 from './HomePageComponent/LMHTSlide/Slide2';
-import Slide3 from './HomePageComponent/LMHTSlide/Slide3';
+import LMHT from './HomePageComponent/LMHT'
 
 export default function ViewBlog()
 {
@@ -161,35 +154,7 @@ export default function ViewBlog()
                 </Paper>
             </Box>
             {/* Blog liên quan */}
-            <Box className='flex flex-col px-20 space-y-10'>
-                <Typography className="text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >CÁC BÀI BLOG LIÊN QUAN</Typography>
-                <Carousel
-                    animation={'slide'}
-                    autoPlay={false}
-                    IndicatorIcon={<PanoramaFishEyeIcon/>}
-                    activeIndicatorIconButtonProps={{
-                        style:{backgroundColor:'#6D6D6D', width:'20px', height:'20px'}
-                    }}
-                    indicatorIconButtonProps={{
-                        style:{marginLeft:'20px'}
-                    }}
-                    
-                    >
-                        <Slide1/>
-                        <Slide2/>
-                        <Slide3/>
-                </Carousel>
-                <Box  className='flex justify-end'>
-                    <Link to="/blogList">
-                        <Button style={{height:'64px', width:'15vw', backgroundColor:'#C4C4C4'}} variant='contained'>
-                            <Typography style={{fontSize: 18, textTransform: 'none'}}>Các bài blog khác</Typography>
-                            <IconButton>
-                                    <img src={rightArrow} alt='rightArrow' />
-                            </IconButton>
-                        </Button>
-                    </Link>
-                </Box>
-            </Box>
+            <LMHT title='CÁC BÀI BLOG LIÊN QUAN'/>
         </div>
 
     )

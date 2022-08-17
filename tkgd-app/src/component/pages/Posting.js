@@ -118,13 +118,10 @@ export default function CustomizedInputBase() {
                             variant='standard'
                             disableUnderline
                             >
-                            <MenuItem value={0}>
-                                <Typography className='text-gray-300'>- - Chọn thể loại - -</Typography>  
-                            </MenuItem>
-                            <MenuItem value={1}>Tip & Tricks</MenuItem>
-                            <MenuItem value={2}>Liên Minh Huyền Thoại</MenuItem>
-                            <MenuItem value={3}>Review Game</MenuItem>
-                            <MenuItem value={4}>Tin hot & sự kiện</MenuItem>
+                            <MenuItem value={0}>Tip & Tricks</MenuItem>
+                            <MenuItem value={1}>Liên Minh Huyền Thoại</MenuItem>
+                            <MenuItem value={2}>Review Game</MenuItem>
+                            <MenuItem value={3}>Tin hot & sự kiện</MenuItem>
                             </Select>
                         </FormControl>
                     </Paper>
@@ -144,17 +141,17 @@ export default function CustomizedInputBase() {
                                 <IconButton>
                                     <img src={UploadtoCloud} alt='UploadtoCloud' />
                                 </IconButton>
-                                <Box className='flex rounded-lg border-2 border-gray-500 items-center justify-center' style={{width:'9vw', height:'50px'}}>
-                                    <Button 
-                                        className='flex flex-row space-x-3 w-full h-full' 
-                                        style={{color:'gray'}}
-                                    >
-                                        <img src={PreviewIcon} alt="Preview"/>
-                                        <Link to="/preview">
+                                <Link to="/preview">
+                                    <Box className='flex rounded-lg border-2 border-gray-500 items-center justify-center' style={{width:'9vw', height:'50px'}}>
+                                        <Button 
+                                            className='flex flex-row space-x-3 w-full h-full' 
+                                            style={{color:'gray'}}
+                                        >
+                                            <img src={PreviewIcon} alt="Preview"/>
                                             <Typography className='text-black' style={{fontSize:15, fontWeight:600, textTransform: 'none'}}>Xem trước</Typography>
-                                        </Link>
-                                    </Button>
-                                </Box>
+                                        </Button>
+                                    </Box>
+                                </Link>
                                 {/* Dialog */}
                                 <div>
                                     <Box className='flex rounded-lg items-center justify-center' bgcolor='primary.main' style={{width:'9vw', height:'50px'}}>

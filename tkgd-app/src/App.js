@@ -5,12 +5,15 @@ import ReviewPage from './component/pages/ReviewPage';
 import BlogList from './component/pages/BlogList';
 import FeedBack from './component/pages/FeedBack';
 import ViewBlog from './component/pages/ViewBlog';
-import Search from './component/pages/Search';
 import PersonalBlog from './component/pages/PersonalBlog';
+import SavedBlogList from './component/pages/SavedBlogList';
 import Posting from './component/pages/Posting'
 import Preview from './component/pages/Preview'
 
-
+import avatar from './assets/avatar/bigavt.svg';
+import avatar2 from './assets/avatar/bigavt2.svg';
+import miniavt1 from './assets/avatar/PersonalBlog1.svg';
+import miniavt2 from './assets/avatar/PersonalBlog2.svg';
 
 import { createTheme, ThemeProvider } from '@mui/material';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -68,7 +71,22 @@ function App() {
                   <ReviewPage />
                 </Route>
                 <Route exact path="/blogList">
-                  <BlogList />
+                  <BlogList title='DANH SÁCH BÀI VIẾT' />
+                </Route>
+                <Route exact path="/LMHT">
+                  <BlogList title='LIÊN MINH HUYỀN THOẠI' />
+                </Route>
+                <Route exact path="/lienquan">
+                  <BlogList title='LIÊN QUÂN' />
+                </Route>
+                <Route exact path="/fifa">
+                  <BlogList title='FIFA ONLINE 4' />
+                </Route>
+                <Route exact path="/freefire">
+                  <BlogList title='FREE FIRE' />
+                </Route>
+                <Route exact path="/hotnews">
+                  <BlogList title='TIN TỨC & SỰ KIỆN' />
                 </Route>
                 <Route exact path="/feedBack">
                   <FeedBack />
@@ -77,10 +95,16 @@ function App() {
                   <ViewBlog />
                 </Route>
                 <Route exact path="/search">
-                  <Search />
+                  <BlogList title='KẾT QUẢ TÌM KIẾM' />
                 </Route>
                 <Route exact path="/personalBlog">
-                  <PersonalBlog />
+                  <PersonalBlog name='Minh Đăng' avt={avatar} miniavt={miniavt1}/>
+                </Route>
+                <Route exact path="/personalBlog2">
+                  <PersonalBlog name='Phúc Lê' avt={avatar2} miniavt={miniavt2}/>
+                </Route>
+                <Route exact path="/savedBlogList">
+                  <SavedBlogList/>
                 </Route>
                 <Route exact path="/posting">
                   <Posting />

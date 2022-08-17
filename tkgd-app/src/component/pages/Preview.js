@@ -31,17 +31,17 @@ export default function ViewBlog()
         <Box className='flex flex-col pt-14'>
             {/* button */}
             <Box className='flex flex-row space-x-5 mb-14 justify-end pr-36'>
-                <Box className='flex rounded-lg border-2 border-gray-500 items-center justify-center' style={{width:'9vw', height:'50px'}}>
-                    <Button 
-                        className='flex flex-row space-x-3 w-full h-full' 
-                        style={{color:'gray'}}
-                    >
-                        <img src={BackIcon} alt="Preview"/>
-                        <Link to="/posting">
+                <Link to="/posting">
+                    <Box className='flex rounded-lg border-2 border-gray-500 items-center justify-center' style={{width:'9vw', height:'50px'}}>
+                        <Button 
+                            className='flex flex-row space-x-3 w-full h-full' 
+                            style={{color:'gray'}}
+                        >
+                            <img src={BackIcon} alt="Preview"/>
                             <Typography className='text-black' style={{fontSize:15, fontWeight:600, textTransform: 'none'}}>Chỉnh sửa</Typography>
-                        </Link>
-                    </Button>
-                </Box>
+                        </Button>
+                    </Box>
+                </Link>
                 {/* Dialog */}
                 <div>
                     <Box className='flex rounded-lg items-center justify-center' bgcolor='primary.main' style={{width:'9vw', height:'50px'}}>

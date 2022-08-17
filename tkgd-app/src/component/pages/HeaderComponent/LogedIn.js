@@ -40,19 +40,21 @@ export default function LogedIn()
                 'aria-labelledby': 'basic-button',
                 }}
             >
-                <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
-                    <img src={avatar} alt="avatar"/>
-                    <Link to="/personalBlog">
-                        <Box className='flex flex-col'>
-                            <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Thái Công</Typography>
-                            <Typography className="text-black" style={{fontWeight:400, fontSize: 14}}>Xem trang cá nhân của bạn</Typography>
-                        </Box>
-                    </Link>
-                </MenuItem>
-                <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
-                    <img src={bookMarkCircle} alt="bookMarkCircle"/>
-                    <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Xem các bài viết đã lưu</Typography>
-                </MenuItem>
+                <Link to="/personalBlog">
+                    <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
+                            <img src={avatar} alt="avatar"/>
+                            <Box className='flex flex-col'>
+                                <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Thái Công</Typography>
+                                <Typography className="text-black" style={{fontWeight:400, fontSize: 14}}>Xem trang cá nhân của bạn</Typography>
+                            </Box>
+                    </MenuItem>
+                </Link>
+                <Link to="/savedBlogList">
+                    <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
+                        <img src={bookMarkCircle} alt="bookMarkCircle"/>
+                        <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Xem các bài viết đã lưu</Typography>
+                    </MenuItem>
+                </Link>
                 <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
                     <img src={accountSettingCircle} alt="accountSettingCircle" />
                     <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Cài đặt tài khoản</Typography>

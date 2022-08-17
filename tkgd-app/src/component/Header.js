@@ -94,13 +94,13 @@ function Header(){
                                 'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <Link to="/blogList">
+                                <Link to="/LMHT">
                                     <MenuItem className='flex flex-row space-x-5' onClick={handleClose}>
                                             <img src={LOLIcon} alt="LOLIcon"/>
                                             <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Liên minh huyền thoại</Typography>
                                     </MenuItem>
                                 </Link>   
-                                <Link to="/blogList">
+                                <Link to="/lienQuan">
 
                                 <MenuItem className='flex flex-row space-x-5' onClick={handleClose}>
                                     <img src={LQIcon} alt="LQIcon"/>
@@ -108,14 +108,14 @@ function Header(){
                                 </MenuItem>
                                 </Link>   
 
-                                <Link to="/blogList">
+                                <Link to="/fifa">
                                 <MenuItem className='flex flex-row space-x-5' onClick={handleClose}>
                                     <img src={FifaIcon} alt="FifaIcon" />
                                     <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Fifa Online 4</Typography>
                                 </MenuItem>
                                 </Link>   
 
-                                <Link to="/blogList">
+                                <Link to="/freefire">
                                 <MenuItem className='flex flex-row space-x-5' onClick={handleClose}>
                                     <img src={FFIcon} alt="FFIcon" />
                                     <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Free Fire</Typography>
@@ -130,7 +130,7 @@ function Header(){
                             </Link>
                         </li>
                         <li>
-                            <Link to="/blogList">
+                            <Link to="/hotnews">
                                 <Typography className="text-black" style={{fontSize: 18, fontWeight:600}}>Tin hot & Sự kiện</Typography>
                             </Link>
                         </li>

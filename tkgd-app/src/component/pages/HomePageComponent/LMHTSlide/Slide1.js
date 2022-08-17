@@ -17,7 +17,7 @@ export default function Slide1(){
             {/* 1 */}
             <Box className='flex flex-col space-y-5' style={{maxHeight:'90vh', width:'100%'}}>
                 <Box className='flex flex-row space-x-3'>
-                        <img src={avt1} alt='avtLMHT1' />
+                    <img src={avt1} alt='avtLMHT1' />
                     <Box className='flex flex-col text-left'>
                         <Typography color='primary'>Dạ Vũ</Typography>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
@@ -51,9 +51,13 @@ export default function Slide1(){
             {/* 2 */}
             <Box className='flex flex-col space-y-5' style={{maxHeight:'90vh', width:'100%'}}>
                 <Box className='flex flex-row space-x-3'>
-                    <img src={avt2} alt='avtLMHT1' />
+                    <Link to='/personalBlog2'>
+                        <img src={avt2} alt='avtLMHT1' />
+                    </Link>
                     <Box className='flex flex-col text-left'>
-                        <Typography color='primary'>Minh Đăng</Typography>
+                    <Link to='/personalBlog2'>
+                        <Typography color='primary'>Phúc Lê</Typography>
+                    </Link>
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
