@@ -10,10 +10,10 @@ import Slide2 from './LMHTSlide/Slide2';
 import Slide3 from './LMHTSlide/Slide3';
 
 
-export default function LMHT(){
+export default function LMHT(props){
     return(
         <Box className='flex flex-col px-20 space-y-10'>
-            <Typography className="text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >LIÊN MINH HUYỀN THOẠI</Typography>
+            <Typography className="text-left font-bold" style={{fontSize: 30, fontWeight: 700}} variant='category' >{props.title}</Typography>
             <Carousel
                 animation={'slide'}
                 autoPlay={false}
@@ -31,7 +31,7 @@ export default function LMHT(){
                     <Slide3/>
             </Carousel>
             <Box  className='flex justify-end'>
-                <Link to="/blogList">
+                <Link to="/LMHT">
                     <Button style={{height:'64px', width:'15vw'}} variant='contained'>
                         <Typography style={{fontSize: 18, textTransform: 'none'}}>Các bài blog khác</Typography>
                         <IconButton>

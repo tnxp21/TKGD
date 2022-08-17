@@ -10,7 +10,7 @@ export default function FeedBack()
     return(
         <Box className='grid grid-cols-2 gap-5 mx-28 my-5 p-5'>
             <Box className='flex flex-col space-y-8'>
-                <Typography className="text-black text-left" style={{fontSize: 30, fontWeight: 600}}>FEED BACK</Typography>
+                <Typography className="text-black text-left" style={{fontSize: 30, fontWeight: 600}}>FEEDBACK</Typography>
                 <Typography className="text-gray-500 text-left" style={{fontSize: 20, fontWeight: 400}}>Bạn luôn có thể liên hệ với chúng tôi qua các thông tin liên hệ sau. Chúng tôi sẽ cố gắng hết sức để hỗ trợ bạn tốt nhất.</Typography>
                 <div className='flex flex-row space-x-5'>
                     <img src={phone} alt='phone'/>

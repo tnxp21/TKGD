@@ -1,17 +1,18 @@
 import { Box, Typography, IconButton, Paper  } from '@mui/material';
 
-import avt from '../../assets/avatar/bigavt.svg';
 import EditIcon from '@mui/icons-material/Edit';
 import { useState } from 'react';
-import Slide1 from './BlogListComponent/Slide1';
-import Slide2 from './BlogListComponent/Slide2';
+import Slide1 from './PersonalBlogComponent/Slide1';
+import Slide2 from './PersonalBlogComponent/Slide2';
 import BG from '../../assets/Pictures/BlogList/backGround.svg';
+import bookMark from '../../assets/Icons/bookMark.svg'
+
 
 import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
 
 
-export default function TipsTricks(){
+export default function PersonalBlog(props){
     const [page, setPage] = useState(1);
     const handleChange = (event, value) => {
         setPage(value);
@@ -24,9 +25,9 @@ export default function TipsTricks(){
                 sx={{borderRadius: '30px'}}
 
             >
-                <img src={avt} alt='avt' />
+                <img src={props.avt} alt='avt' />
                 <Box className='flex flex-row space-x-3 justify-center items-center'>
-                    <Typography className='text-center' style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
+                    <Typography className='text-center' style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                     <IconButton><EditIcon /></IconButton>
                 </Box>
                 <Box className='grid grid-rows-5 gap-y-5'>
@@ -58,8 +59,8 @@ export default function TipsTricks(){
                     className='flex flex-col pb-10 px-10 space-y-10 justify-center items-center pl-28'
                     style={{backgroundImage:`url(${BG})`, backgroundSize: 'cover'}}
                 >
-                    {page===1 && <Slide1/>}
-                    {page===2 && <Slide2/>}
+                    {page===1 && <Slide1 name={props.name} miniavt={props.miniavt} saved={bookMark}/>}
+                    {page===2 && <Slide2 name={props.name} miniavt={props.miniavt} saved={bookMark}/>}
                     <Pagination
                         count={10}
                         color="primary"
