@@ -1,0 +1,10 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="25" height="25" fill="url(#pattern0)"/>
+<rect x="4" y="19" width="17" height="4" fill="#F89800"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_1022_6489" transform="scale(0.0111111)"/>
+</pattern>
+<image id="image0_1022_6489" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEJ0lEQVR4nO2az2sbRxTHvyNLchoZajA55hqSXF0oOZT+C6VJe3CixE7xOLAnB3oMGHos2IV2QT9w7ZLkEEhaAvkDnPZQ6L3Nj3NuwSQX01hr/HqoDGFA3rfa2Zln5X1AB0lvZ5+/zOrj2VlAURRFURRFURRFKCZ2A1ystZ8CuAPgEgAyxvxpjPmu0+n8Fbk1FiciaGvtFwAeAGg6Xw2MMV93u93HEdoqhPigFxcXZ5vN5ksAZ0aUvB4MBue2t7ffhuyrKLXYDeQxPT19E6NDBoAzzWZzKVQ/4yI+aCL6hlFmIfzqFB308vLy5wAuMkrPr6ysfFZ1P2UQHXStVlvm1hIRuzYGYi+3JEnmsix7BeAU85D9LMvObm1tva6yr3ERO6MPDg5ugB8yAEw3Go1rVfVTFrFBMyXoIlaKIoMuIEEXsVIUGXQRCbpIlaK4y2wMCbqIlKK4GT2GBF1ESlFc0GNK0EWcFEUFXUKCLuKkKCpopgT3h688bMl2vCLm8uJK0Bhzn4gMgIWcIUVJUcyM5krw8PCwX6vV+owhRUlRTNBMCb7o9/u/dzqdHQD/MOrFSFFE0FwJGmN6AGj49mfG0GKkKCJorgQHg8HdozeNRmMbwLu8g6SsFKMHnSTJHBFdzqszxjx8X2xpmu4C+JVxiq+WlpaO2woLQvSgi0jQ/ewkSTF60EUk6H54kqQYNegxJehyIqQYNWhjDGf1Nnhfgi5cKSLySjFa0EmSzAH4klH68LjVXZqmu0T0W94gRHQlphSjBc2VIBH18mqmpqZyaxBZitGCLiNBl6EUnzHGiybFKEF7kqDLJqMmmhSjBO1Dgi7SpRg8aF8SdJEuxXroExbYE1yw1ubdcx6HIyluVDD2SILPaE97gmUJLsWgQXvcEyxLcCkGDZopwVAE7SXY5ePhwRjfBN1TDDajPTwY45ugK8Vg/3VwV4K9Xu8C+IuUkVhr/0a+DyyAH3ycL48gM7qABLvw9EcbY0StFIMEzZTgfpZl93yds16v/wJBK8XKg+auBN09wbJw9xRDrRQrD7qABDm3OgvBucWKQFKsPGimBJ93u90/fJ+73+8/hZA9xUqDLiDBIrdDCyFFipUGHUOCLlKkWFnQsSTokqbprjHmUV4dEV0e9lwJ3n6XrLWnjTHfE9FVAB8XPPwtgPutVuvbjY2NfyexH58rw3UiWhnz2FkAyd7eXh3ArUnsx8tPx9raWg3AdQ9DtYdjTVQ/gIBHwj4UpnwMsrOzQ/Pz82cBfFJmHCLaXF9ffzJp/QAeZ3Sr1VoF8BP+F0lR3hDRjzMzM7cntZ9gtNvt1urq6kex+zjCWnu63W63YvehKIqiKIqiKMpofN4mrfzZiBj0ej0vGelNpUBo0IHQoAOhQQdCgw6EBh0IDToQGrSiKIqiKIqiKMqHzn87fLiVOWWRZgAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

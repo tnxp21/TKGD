@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
 import rightArrow from '../../../assets/Icons/rightArrow.svg';
 import SlideShow1 from '../../../assets/Pictures/SlideShow1.svg';
 import SlideShow2 from '../../../assets/Pictures/SlideShow2.svg';

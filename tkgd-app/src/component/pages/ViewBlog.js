@@ -50,7 +50,7 @@ export default function ViewBlog()
                         
                     </Box>
                     <Box className='grid grid-cols-2'>
-                        <Box className='flex flex-col text-left space-y-10'>
+                        <Box className='flex flex-col text-left space-y-5'>
                             <Typography style={{fontWeight:600, fontSize:18}}>
                                 Thu nhập “khủng”
                             </Typography>
@@ -60,6 +60,9 @@ export default function ViewBlog()
                             <Typography style={{fontWeight:400, fontSize:18}}>
                                 Ở trên Twitch, mỗi lần đăng ký theo dõi (Sub) kênh của một streamer, người xem sẽ phải bỏ ra 5 USD/ tháng để nhận được những đặc quyền trên kênh chat và nhận được nhiều ưu đãi riêng trong các dịp sự kiện. Các streamer phải chia 70/30 với Twitch từ mỗi lượt sub, nên thu nhập thực sẽ là 3,5 USD/ người mỗi tháng. Và giả sử một streamer có 30.000 người theo dõi thì thu nhập của người đó mỗi tháng sẽ là 105.000 USD.
                             </Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>
+                                Thu nhập của streamer Việt Nam cũng như thế giới đều chủ yếu đến từ những nguồn sau: sự đóng góp và ủng hộ (donate), lượt xem và đăng ký kênh, nhà tài trợ và quảng cáo. Với các nguồn thu này, lượt xem của streamer càng tăng họ càng có thêm nhiều thu nhập. Ngoài các hình thức kiếm tiền cũ, nhiều streamer hiện nay cũng tạo thu nhập bằng cách đặt link affiliate dưới phần mô tả hoặc trên video của mình. Khi những người xem video click vào link affiliate marketing và mua hàng, các streamer sẽ nhận được tiền hoa hồng từ đó. Thu nhập từ affiliate marketing của các streamer hoàn toàn có thể lên tới hàng chục triệu đồng mỗi tháng chỉ nhờ các đường link này.
+                            </Typography>
                         </Box>
                         <img src={img2} alt='thu_nhap_khung' />
 
@@ -67,7 +70,7 @@ export default function ViewBlog()
                     <Box className='grid grid-cols-2'>
                         <img src={img3} alt='Khong_nhu_mo' />
 
-                        <Box className='flex flex-col text-left space-y-10'>
+                        <Box className='flex flex-col text-left space-y-5'>
                             <Typography style={{fontWeight:600, fontSize:18}}>
                                 Không như là mơ
                             </Typography>
