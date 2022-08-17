@@ -7,7 +7,7 @@ import bookMark from '../../../assets/Icons/bookMark.svg'
 
 export default function Slide1(){
     return(
-        <Box className='grid grid-rows-4 gap-y-14 mx-32'>
+        <Box className='grid grid-rows-4 gap-y-14'>
             <Paper 
                 className='flex flex-col space-y-5 px-14 py-5' 
                 elevation={5}
@@ -20,13 +20,17 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={blogListThumbnail} alt='blogListThumbnail' />
+                <Link to="viewBlog">
+                    <img src={blogListThumbnail} alt='blogListThumbnail' />
+                </Link>
                 <Box className='text-left space-y-5'>
-                    <Typography style={{fontWeight:600, fontSize:22}}>Góc tối của nghề Streamer</Typography>
+                    <Link to="viewBlog">
+                        <Typography style={{fontWeight:600, fontSize:22}}>Góc tối của nghề Streamer</Typography>
+                    </Link>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc đầy tìm năng trong vài năm trở lại.</Typography>
                     
                 </Box>
-                <Link href="#">
+                <Link to="viewBlog">
                         <Typography className='text-left' style={{fontWeight:600, fontSize:22}}>Đọc thêm...</Typography>
                 </Link>
                 <Box className='flex flex-grow items-end flex-row justify-between '>
@@ -56,13 +60,17 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
-                <img src={blogListThumbnail} alt='blogListThumbnail' />
+                <Link to="viewBlog">
+                    <img src={blogListThumbnail} alt='blogListThumbnail' />
+                </Link>
                 <Box className='text-left space-y-5'>
-                    <Typography style={{fontWeight:600, fontSize:22}}>Góc tối của nghề Streamer</Typography>
+                    <Link to="viewBlog">
+                        <Typography style={{fontWeight:600, fontSize:22}}>Góc tối của nghề Streamer</Typography>
+                    </Link>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc đầy tìm năng trong vài năm trở lại.</Typography>
                     
                 </Box>
-                <Link href="#">
+                <Link to="viewBlog">
                         <Typography className='text-left' style={{fontWeight:600, fontSize:22}}>Đọc thêm...</Typography>
                 </Link>
                 <Box className='flex flex-grow items-end flex-row justify-between '>

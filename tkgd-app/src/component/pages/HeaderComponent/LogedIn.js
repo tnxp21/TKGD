@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import LogoutCircle from '../../../assets/Icons/LogoutCircle.svg'
@@ -40,10 +41,12 @@ export default function LogedIn()
             >
                 <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
                     <img src={avatar} alt="avatar"/>
-                    <Box className='flex flex-col'>
-                        <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Thái Công</Typography>
-                        <Typography className="text-black" style={{fontWeight:400, fontSize: 14}}>Xem trang cá nhân của bạn</Typography>
-                    </Box>
+                    <Link to="/personalBlog">
+                        <Box className='flex flex-col'>
+                            <Typography className="text-black" style={{fontWeight:600, fontSize: 20}}>Thái Công</Typography>
+                            <Typography className="text-black" style={{fontWeight:400, fontSize: 14}}>Xem trang cá nhân của bạn</Typography>
+                        </Box>
+                    </Link>
                 </MenuItem>
                 <MenuItem className='flex flex-row space-x-5' onClick={handleClose2}>
                     <img src={bookMarkCircle} alt="bookMarkCircle"/>

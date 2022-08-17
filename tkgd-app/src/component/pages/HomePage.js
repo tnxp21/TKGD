@@ -7,7 +7,7 @@ import TopWritter from './HomePageComponent/TopWritter';
 
 export default function HomePage() {
     return(
-        <div className='flex flex-col justify-between space-y-14'>
+        <div className='flex flex-col justify-between space-y-10 mb-8'>
             <HotNews />
             <LMHT />
             <TopWritter />

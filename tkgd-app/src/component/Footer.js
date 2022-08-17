@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Box, Typography} from "@mui/material";
 import rightArrow from '../assets/Icons/rightArrow.svg';
 import { Button } from './customComponent/Button';
@@ -26,10 +27,12 @@ export default function Footer(){
                     <Typography style={{fontWeight: 400, fontSize: 18, color: 'white'}}>Đây là nơi chia sẻ các kiến thức về game,</Typography>
                     <Typography style={{fontWeight: 400, fontSize: 18, color: 'white'}}>còn là nơi phát triển, nuôi dưỡng niềm đam mê của bạn</Typography>
                 </Box>
-                <Button className="flex flex-row space-x-3 justify-center items-center" style={{height:'64px', width:'15vw'}} variant='contained'>
-                    <Typography style={{fontSize: 18, textTransform: 'none'}}>Đăng bài</Typography>
-                    <img src={rightArrow} alt='rightArrow' />
-                </Button>
+                <Link to="/posting">
+                    <Button className="flex flex-row space-x-3 justify-center items-center" style={{height:'64px', width:'15vw'}} variant='contained'>
+                        <Typography style={{fontSize: 18, textTransform: 'none'}}>Đăng bài</Typography>
+                        <img src={rightArrow} alt='rightArrow' />
+                    </Button>
+                </Link>
             </Box>
             {/* about us */}
             <Box className='flex flex-col justify-center space-y-5 pt-16 pb-5' bgcolor='primary.main'>

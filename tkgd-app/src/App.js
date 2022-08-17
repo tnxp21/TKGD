@@ -4,6 +4,12 @@ import Footer from './component/Footer';
 import ReviewPage from './component/pages/ReviewPage';
 import BlogList from './component/pages/BlogList';
 import FeedBack from './component/pages/FeedBack';
+import ViewBlog from './component/pages/ViewBlog';
+import Search from './component/pages/Search';
+import PersonalBlog from './component/pages/PersonalBlog';
+import Posting from './component/pages/Posting'
+
+
 
 import { createTheme, ThemeProvider } from '@mui/material';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -65,6 +71,18 @@ function App() {
                 </Route>
                 <Route exact path="/feedBack">
                   <FeedBack />
+                </Route>
+                <Route exact path="/viewBlog">
+                  <ViewBlog />
+                </Route>
+                <Route exact path="/search">
+                  <Search />
+                </Route>
+                <Route exact path="/personalBlog">
+                  <PersonalBlog />
+                </Route>
+                <Route exact path="/posting">
+                  <Posting />
                 </Route>
               </ScrollToTop>
             </Switch>
