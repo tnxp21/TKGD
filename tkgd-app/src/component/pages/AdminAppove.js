@@ -1,4 +1,4 @@
-import { Box, Typography, IconButton, Button, Paper  } from '@mui/material';
+import { Box, Typography, IconButton, Paper  } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import downArrow from '../../assets/Icons/downArrow.svg';
 import ok from '../../assets/Icons/ok.svg';
