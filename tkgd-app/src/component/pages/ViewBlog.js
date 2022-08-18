@@ -7,6 +7,10 @@ import blogListThumbnail from '../../assets/Pictures/BlogList/blogListThumbnail.
 import heartReact from '../../assets/Icons/heartReact.svg';
 import bookMark from '../../assets/Icons/bookMark.svg'
 import emoji from '../../assets/Icons/emoji.svg'
+import facebook from '../../assets/Icons/facebook.svg'
+import instagram from '../../assets/Icons/instagram.svg'
+import zalo from '../../assets/Icons/zalo.svg'
+import threeDots from '../../assets/Icons/threeDots.svg'
 import BG from '../../assets/Pictures/BlogList/backGround.svg';
 import img2 from '../../assets/Pictures/ViewBlog/Image2.svg';
 import img3 from '../../assets/Pictures/ViewBlog/Image3.svg';
@@ -27,12 +31,27 @@ export default function ViewBlog()
                     sx={{borderRadius: '30px'}}
                 >
                     <Typography className='text-left' style={{fontWeight:600, fontSize:30}}>Góc tối của nghề Streamer</Typography>
-
-                    <Box className='flex flex-row space-x-3'>
-                        <img src={avt} alt='avt' />
-                        <Box className='flex flex-col text-left'>
-                            <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
-                            <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
+                    <Box className='flex flex-row justify-between'>
+                        <Box className='flex flex-row space-x-3'>
+                            <img src={avt} alt='avt' />
+                            <Box className='flex flex-col text-left'>
+                                <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>Minh Đăng</Typography>
+                                <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
+                            </Box>
+                        </Box>
+                        <Box className='flex items-start flex-row space-x-5'>
+                            <IconButton>
+                                <img src={facebook} alt='facebook' />
+                            </IconButton>
+                            <IconButton>
+                                <img src={zalo} alt='zalo' />
+                            </IconButton>
+                            <IconButton>
+                                <img src={instagram} alt='instagram' />
+                            </IconButton>
+                            <IconButton>
+                                <img src={threeDots} alt='threeDots' />
+                            </IconButton>
                         </Box>
                     </Box>
                     {/* Content */}
