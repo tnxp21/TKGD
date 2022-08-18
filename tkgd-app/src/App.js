@@ -9,6 +9,8 @@ import PersonalBlog from './component/pages/PersonalBlog';
 import SavedBlogList from './component/pages/SavedBlogList';
 import Posting from './component/pages/Posting'
 import Preview from './component/pages/Preview'
+import Admin from './component/pages/Admin'
+import AdminAppove from './component/pages/AdminAppove'
 
 import avatar from './assets/avatar/bigavt.svg';
 import avatar2 from './assets/avatar/bigavt2.svg';
@@ -111,6 +113,12 @@ function App() {
                 </Route>
                 <Route exact path="/preview">
                   <Preview />
+                </Route>
+                <Route exact path="/manage">
+                  <Admin />
+                </Route>
+                <Route exact path="/approve">
+                  <AdminAppove />
                 </Route>
               </ScrollToTop>
             </Switch>

@@ -5,7 +5,8 @@ import { useState } from 'react';
 import Slide1 from './PersonalBlogComponent/Slide1';
 import Slide2 from './PersonalBlogComponent/Slide2';
 import BG from '../../assets/Pictures/BlogList/backGround.svg';
-import bookMark from '../../assets/Icons/bookMark.svg'
+import threeDots from '../../assets/Icons/threeDots.svg'
+
 
 
 import Pagination from '@mui/material/Pagination';
@@ -59,8 +60,8 @@ export default function PersonalBlog(props){
                     className='flex flex-col pb-10 px-10 space-y-10 justify-center items-center pl-28'
                     style={{backgroundImage:`url(${BG})`, backgroundSize: 'cover'}}
                 >
-                    {page===1 && <Slide1 name={props.name} miniavt={props.miniavt} saved={bookMark}/>}
-                    {page===2 && <Slide2 name={props.name} miniavt={props.miniavt} saved={bookMark}/>}
+                    {page===1 && <Slide1 name={props.name} miniavt={props.miniavt} saved={threeDots}/>}
+                    {page===2 && <Slide2 name={props.name} miniavt={props.miniavt} saved={threeDots}/>}
                     <Pagination
                         count={10}
                         color="primary"

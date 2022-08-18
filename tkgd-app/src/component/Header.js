@@ -213,15 +213,17 @@ function Header(){
                                     <Typography className='text-white' style={{fontSize:15, fontWeight:600, textTransform: 'none'}}>Sign in</Typography>
                                 </Button>
                             </Box>
-                            <Box className='rounded-md border-2 border-gray-500' >
-                                <Button 
-                                    className='flex flex-row space-x-3 rounded-md mt-0 w-full items-center' 
-                                    onClick={handleClick2} 
-                                >
-                                    <img src={GoogleIcon} alt="GoogleIcon"/>
-                                    <Typography className='text-black' style={{fontSize:15, fontWeight:600, textTransform: 'none'}}>Sign in with Google</Typography>
-                                </Button>
-                            </Box>
+                            <Link to="/manage">
+                                <Box className='rounded-md border-2 border-gray-500' >
+                                    <Button 
+                                        className='flex flex-row space-x-3 rounded-md mt-0 w-full items-center' 
+                                        onClick={handleClick2} 
+                                    >
+                                        <img src={GoogleIcon} alt="GoogleIcon"/>
+                                        <Typography className='text-black' style={{fontSize:15, fontWeight:600, textTransform: 'none'}}>Sign in with Google</Typography>
+                                    </Button>
+                                </Box>
+                            </Link>
                             <Box className='flex flex-row justify-between'>
                                 <Typography className='text-gray-600' style={{fontSize:15, fontWeight:600}}>
                                     Don't have an account?
