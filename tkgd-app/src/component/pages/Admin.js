@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Box, Typography, IconButton, Button  } from '@mui/material';
+import { Box, Typography, IconButton } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import downArrow from '../../assets/Icons/downArrow.svg';
 import logo from '../../assets/Icons/logo.svg';
