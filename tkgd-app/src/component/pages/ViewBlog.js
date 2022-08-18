@@ -104,7 +104,7 @@ export default function ViewBlog()
                             <img src={avt2} alt='avt' />
                             <Box className='rounded-3xl flex flex-col justify-between px-5 items-start w-full' style={{backgroundColor: '#F6F6F6'}}>
                                 <Typography color='primary' style={{fontWeight:600, fontSize:18}}>Minh An</Typography>
-                                <Typography className='text-black' style={{fontWeight:400, fontSize:18}}>Bài viết khá hay !!!</Typography>
+                                <Typography className='text-black' style={{fontWeight:400, fontSize:18}}>Bài viết khá hay!!!</Typography>
                                 <Box className='flex flex-row space-x-4'>
                                     <Button>
                                         <Typography className='text-gray-500' style={{fontWeight:400, fontSize:18, textTransform: 'none'}}>Thích</Typography>
@@ -120,7 +120,7 @@ export default function ViewBlog()
                             <Box className='flex flex-col space-y-8'>
                                 <Box className='rounded-3xl flex flex-col justify-between px-5 items-start w-full' style={{backgroundColor: '#F6F6F6'}}>
                                     <Typography color='primary' style={{fontWeight:600, fontSize:18}}>Thái Hoài</Typography>
-                                    <Typography className='text-black' style={{fontWeight:400, fontSize:18}}>Bài viết rất hữu ít :))))</Typography>
+                                    <Typography className='text-black' style={{fontWeight:400, fontSize:18}}>Bài viết rất hữu ích :))))</Typography>
                                     <Box className='flex flex-row space-x-4'>
                                         <Button>
                                             <Typography className='text-gray-500' style={{fontWeight:400, fontSize:18, textTransform: 'none'}}>Thích</Typography>
@@ -136,7 +136,7 @@ export default function ViewBlog()
                                     <Box className='flex flex-col'>
                                         <Box className='rounded-3xl flex flex-col justify-between px-5 items-start w-full' style={{backgroundColor: '#F6F6F6'}}>
                                             <Typography color='primary' style={{fontWeight:600, fontSize:18}}>Minh An</Typography>
-                                            <Typography className='text-black' style={{fontWeight:400, fontSize:18}}>Bài viết khá hay !!!</Typography>
+                                            <Typography className='text-black' style={{fontWeight:400, fontSize:18}}>Đúng vậy!!!</Typography>
                                             <Box className='flex flex-row space-x-4'>
                                                 <Button>
                                                     <Typography className='text-gray-500' style={{fontWeight:400, fontSize:18, textTransform: 'none'}}>Thích</Typography>
