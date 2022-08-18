@@ -81,7 +81,7 @@ export default function ViewBlog()
                             <Button startIcon={<img src={heartReact} alt='heartReact' />}>
                                 <Typography style={{fontWeight:400, fontSize:18}}>1.5K</Typography>
                             </Button>
-                            <Typography style={{fontWeight:400, fontSize:18}}>8 phản hồi</Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>3 phản hồi</Typography>
                         </Box>
                         <Box className='flex flex-row space-x-2 items-center'>
                             <IconButton>

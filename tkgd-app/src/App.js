@@ -86,7 +86,7 @@ function App() {
                   <BlogList title='FREE FIRE' />
                 </Route>
                 <Route exact path="/hotnews">
-                  <BlogList title='TIN TỨC & SỰ KIỆN' />
+                  <BlogList title='TIN HOT & SỰ KIỆN' />
                 </Route>
                 <Route exact path="/feedBack">
                   <FeedBack />

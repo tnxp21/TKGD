@@ -20,9 +20,7 @@ export default function Slide1(){
                         <Typography style={{textColor:'primary'}} >17.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
-                <Link to="viewBlog">
-                    <img src={blogListThumbnail} alt='blogListThumbnail' />
-                </Link>
+                <img src={blogListThumbnail} alt='blogListThumbnail' />
                 <Box className='text-left space-y-5'>
                     <Typography style={{fontWeight:600, fontSize:22}}>Top đội hình DTCL mùa 7, đội hình mạnh DTCL 12.11</Typography>
                     <Typography style={{fontWeight:400, fontSize:18}}>Trong danh sách đội hình mạnh Đấu Trường Chân Lý ở dưới đây, có những đội hình sẽ sử dụng Slowroll và Hyperroll, đây là hai kiểu chiến thuật thường được game ...</Typography>
@@ -37,9 +35,9 @@ export default function Slide1(){
                             <IconButton>
                                 <img src={heartReact} alt='heartReact' />
                             </IconButton>
-                            <Typography style={{fontWeight:400, fontSize:18}}>1K</Typography>
+                            <Typography style={{fontWeight:400, fontSize:18}}>2.2K</Typography>
                         </Box>
-                        <Typography style={{fontWeight:400, fontSize:18}}>5 phản hồi</Typography>
+                        <Typography style={{fontWeight:400, fontSize:18}}>18 phản hồi</Typography>
                     </Box>
                     <IconButton>
                         <img src={bookMark} alt='bookMark' />

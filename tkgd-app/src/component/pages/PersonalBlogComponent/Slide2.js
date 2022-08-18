@@ -14,7 +14,7 @@ export default function Slide1(props){
                 <Box className='flex flex-row space-x-3'>
                     <img src={props.miniavt} alt='avt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>props.name</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >17.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -52,7 +52,7 @@ export default function Slide1(props){
                 <Box className='flex flex-row space-x-3'>
                     <img src={props.miniavt} alt='avt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>props.name</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >17.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -88,7 +88,7 @@ export default function Slide1(props){
                 <Box className='flex flex-row space-x-3'>
                     <img src={props.miniavt} alt='avt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>props.name</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >17.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>
@@ -124,7 +124,7 @@ export default function Slide1(props){
                 <Box className='flex flex-row space-x-3'>
                     <img src={props.miniavt} alt='avt' />
                     <Box className='flex flex-col text-left'>
-                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>props.name</Typography>
+                        <Typography style={{fontWeight:600, fontSize: 24}} color='primary'>{props.name}</Typography>
                         <Typography style={{textColor:'primary'}} >17.06.2022  - 4 phút đọc</Typography>
                     </Box>
                 </Box>

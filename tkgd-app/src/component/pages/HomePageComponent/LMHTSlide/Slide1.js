@@ -41,7 +41,7 @@ export default function Slide1(){
                         <Typography style={{fontWeight:400, fontSize:18}}>1.5K</Typography>
                     </Box>
                     <Box className='flex flex-row space-x-2 items-center'>
-                        <Typography style={{fontWeight:400, fontSize:18}}>8 phản hồi</Typography>
+                        <Typography style={{fontWeight:400, fontSize:18}}>3 phản hồi</Typography>
                         <IconButton>
                             <img src={bookMark} alt='bookMark' />
                         </IconButton>
@@ -58,7 +58,7 @@ export default function Slide1(){
                     <Link to='/personalBlog2'>
                         <Typography color='primary'>Phúc Lê</Typography>
                     </Link>
-                        <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
+                        <Typography style={{textColor:'primary'}} >07.06.2022  - 10 phút đọc</Typography>
                     </Box>
                 </Box>
                 <Link to="viewBlog">
@@ -66,7 +66,7 @@ export default function Slide1(){
                 </Link>
                 <Box className='text-left'>
                     <Link to="viewBlog">
-                        <Typography style={{fontWeight:600, fontSize:22}}>Góc tối của nghề Streamer</Typography>
+                        <Typography style={{fontWeight:600, fontSize:22}}>Tổng quan về mùa 7</Typography>
                     </Link>
                     <Typography style={{fontWeight:400, fontSize:18}}>Trong xuyên suốt lịch sử phát triển của Đấu Trường Chân Lý thì những chủ lực... </Typography>
                 </Box>
@@ -91,7 +91,7 @@ export default function Slide1(){
                     <img src={avt3} alt='avtLMHT1' />
                     <Box className='flex flex-col text-left'>
                         <Typography color='primary'>Thành Thái</Typography>
-                        <Typography style={{textColor:'primary'}} >05.06.2022  - 4 phút đọc</Typography>
+                        <Typography style={{textColor:'primary'}} >08.06.2022  - 7 phút đọc</Typography>
                     </Box>
                 </Box>
                 <Link to="viewBlog">
@@ -99,7 +99,7 @@ export default function Slide1(){
                 </Link>
                 <Box className='text-left'>
                     <Link to="viewBlog">
-                        <Typography style={{fontWeight:600, fontSize:22}}>Cuộc sống của một streamer</Typography>
+                        <Typography style={{fontWeight:600, fontSize:22}}>Cuộc sống của một Streamer</Typography>
                     </Link>
                     <Typography style={{fontWeight:400, fontSize:18}}>Giới trẻ hiện nay rất đam mê với nghề Streamer, một công việc ... </Typography>
                 </Box>
